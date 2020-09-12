@@ -46,6 +46,7 @@ class Api::V1::RemindersController < ApplicationController
 
     # Only allow a trusted parameter "white list" through.
     def reminder_params
-      params.require(:reminder).permit(:duration, :startDate, :endDate, :active, :false, :stickified)
+      # params.require(:reminder).permit(:duration, :startDate, :endDate, :active, :false, :stickified)
+      params.require(:reminder).permit!
     end
 end

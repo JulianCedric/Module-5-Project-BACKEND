@@ -3,4 +3,3 @@ class Habit < ApplicationRecord
     has_one :reminder
 end
 
-# # # 

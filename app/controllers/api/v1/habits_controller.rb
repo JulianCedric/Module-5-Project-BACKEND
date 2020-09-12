@@ -46,6 +46,7 @@ class Api::V1::HabitsController < ApplicationController
 
     # Only allow a trusted parameter "white list" through.
     def habit_params
-      params.require(:habit).permit(:type, :name, :description, :dateCreated, :progress, :counter, :percentage, :dailyWinConfirmation)
+      # params.require(:habit).permit(:type, :name, :description, :dateCreated, :progress, :counter, :percentage, :dailyWinConfirmation)
+      params.require(:habit).permit!
     end
 end
