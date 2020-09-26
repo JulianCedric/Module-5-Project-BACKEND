@@ -10,18 +10,18 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_08_31_070541) do
+ActiveRecord::Schema.define(version: 2020_09_26_005021) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
   create_table "habits", force: :cascade do |t|
     t.integer "user_id"
-    t.string "type"
     t.string "name"
     t.string "description"
+    t.string "quote"
     t.integer "dateCreated"
-    t.integer "progress"
+    t.string "column"
     t.integer "counter"
     t.integer "percentage"
     t.boolean "dailyWinConfirmation"
@@ -34,8 +34,8 @@ ActiveRecord::Schema.define(version: 2020_08_31_070541) do
     t.integer "duration"
     t.integer "startDate"
     t.integer "endDate"
-    t.boolean "active"
-    t.boolean "stickified"
+    t.boolean "inProgress"
+    t.boolean "stickifyd"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end

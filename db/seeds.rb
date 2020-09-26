@@ -12,6 +12,16 @@ Reminder.destroy_all
 
 User.create(id: 1, firstName: 'Brendon', lastName: 'Clark', email: 'bclark@email.com', username: 'bclark', password: 'abc123')
 
-Habit.create(user_id: 1, name: 'Meditation', description: 'meditate for 20 min at least once daily', dateCreated: 2020-8-24, progress: 0, counter: 1, percentage: 4.76, dailyWinConfirmation: false)
+Habit.create(
+    user_id: 1,
+    name: '',
+    description: 'Write 1 new thing I learned today in my journal before bedtime',
+    quote: "'Practice isn't the thing you do once you're good. It's the thing you do that makes you good.' -Malcolm Gladwell",
+    dateCreated: '',
+    column: 'A',
+    counter: 0,
+    percentage: 0,
+    dailyWinConfirmation: false
+    )
 
-Reminder.create(habit_id: 1, duration: 21, startDate: 2020-8-25, endDate: 2020-9-15, active: false, stickified: false)
+Reminder.create(habit_id: 1, duration: 21, startDate: 2020-8-25, endDate: 2020-9-15, stickifyd: false)

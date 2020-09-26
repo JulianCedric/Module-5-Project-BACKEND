@@ -5,8 +5,8 @@ class CreateReminders < ActiveRecord::Migration[6.0]
       t.integer :duration
       t.integer :startDate
       t.integer :endDate
-      t.boolean :active
-      t.boolean :stickified
+      t.boolean :inProgress
+      t.boolean :stickifyd
 
       t.timestamps
     end

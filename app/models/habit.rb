@@ -1,5 +1,3 @@
 class Habit < ApplicationRecord
-    belongs_to :user
-    has_one :reminder
+    has_many :reminders
 end
-
