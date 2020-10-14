@@ -109,3 +109,5 @@ Habit.create(
 )
 
 Reminder.create(habit_id: 1, duration: 21, startDate: 2020-8-25, endDate: 2020-9-15, stickifyd: false)
+
+# 
