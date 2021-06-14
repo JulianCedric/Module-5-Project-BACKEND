@@ -111,3 +111,7 @@ Habit.create(
 Reminder.create(habit_id: 1, duration: 21, startDate: 2020-8-25, endDate: 2020-9-15, stickifyd: false)
 
 # 
+
+# 2021.06.13 - SUN: Confirmed all final tests passing for CRUD User Actions
+
+# 
